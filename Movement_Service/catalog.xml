@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/diogo/Desktop/IS/Movement_Service/../IS_TP2/xml-resources/jaxb/myPlace/myPlaceSchema.xml.xsd" uri="src/conf/xml-resources/jaxb/JaxB_Binding/myPlaceSchema.xml.xsd"/>
+    <system systemId="file:/C:/Users/diogo/Desktop/IS/Movement_Service/../IS_TP2/src/XML/myPlaceSchema.xml" uri="src/conf/xml-resources/jaxb/myPlaceSchemaBinding/myPlaceSchema.xml.xsd"/>
+</catalog>

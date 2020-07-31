@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="Wolf_control">
+      <implementation-class>control_package.Wolf_control</implementation-class>
+    </service>
+    <service name="Cow_control">
+      <implementation-class>control_package.Cow_control</implementation-class>
+    </service>
+    <service name="Dog_control">
+      <implementation-class>control_package.Dog_control</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

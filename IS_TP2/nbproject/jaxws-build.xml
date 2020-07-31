@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-Wolf_control" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Wolf_control"/>
+        <property name="wsdl-Wolf_control" location="xml-resources/web-service-references/Wolf_control/wsdl/localhost_8080/Wolf_control/Wolf_control.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Wolf_control" destdir="${build.generated.dir}/jax-wsCache/Wolf_control" wsdl="${wsdl-Wolf_control}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Wolf_control/Wolf_control?wsdl" xnocompile="true" xendorsed="true" package="Services">
+            <depends file="${wsdl-Wolf_control}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Wolf_control"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Wolf_control">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Wolf_control" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Wolf_control"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/Services"/>
+    </target>
+    <target name="wsimport-client-Cow_control" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Cow_control"/>
+        <property name="wsdl-Cow_control" location="xml-resources/web-service-references/Cow_control/wsdl/localhost_8080/Cow_control/Cow_control.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Cow_control" destdir="${build.generated.dir}/jax-wsCache/Cow_control" wsdl="${wsdl-Cow_control}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Cow_control/Cow_control?wsdl" xnocompile="true" xendorsed="true" package="cow">
+            <depends file="${wsdl-Cow_control}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Cow_control"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Cow_control">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Cow_control" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Cow_control"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/cow"/>
+    </target>
+    <target name="wsimport-client-Dog_control" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Dog_control"/>
+        <property name="wsdl-Dog_control" location="xml-resources/web-service-references/Dog_control/wsdl/localhost_8080/Movement_Service/Dog_control.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Dog_control" destdir="${build.generated.dir}/jax-wsCache/Dog_control" wsdl="${wsdl-Dog_control}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Movement_Service/Dog_control?wsdl" xnocompile="true" xendorsed="true" package="dog">
+            <depends file="${wsdl-Dog_control}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Dog_control"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Dog_control">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Dog_control" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Dog_control"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/dog"/>
+    </target>
+    <target name="wsimport-client-MovementWebService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MovementWebService"/>
+        <property name="wsdl-MovementWebService" location="xml-resources/web-service-references/MovementWebService/wsdl/localhost_58762/MovementWebService.asmx.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MovementWebService" destdir="${build.generated.dir}/jax-wsCache/MovementWebService" wsdl="${wsdl-MovementWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:58762/MovementWebService.asmx?WSDL" xnocompile="true" xendorsed="true" package="c_sharp">
+            <depends file="${wsdl-MovementWebService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MovementWebService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MovementWebService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MovementWebService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MovementWebService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/c_sharp"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-Wolf_control, wsimport-client-Cow_control, wsimport-client-Dog_control, wsimport-client-MovementWebService"/>
+</project>

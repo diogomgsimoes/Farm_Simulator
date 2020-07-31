@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/adroc/Desktop/IS_TP2/IS_TP2/src/XML/myPlaceSchema.xml" uri="xml-resources/jaxb/myPlace/myPlaceSchema.xml.xsd"/>
+    <system systemId="http://localhost:8084/WebApplication2/webserviceIS?wsdl" uri="xml-resources/web-service-references/webserviceIS/wsdl/localhost_8084/WebApplication2/webserviceIS.wsdl"/>
+    <system systemId="http://localhost:8084/WebApplication2/webserviceIS?xsd=1" uri="xml-resources/web-service-references/webserviceIS/wsdl/localhost_8084/WebApplication2/webserviceIS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Cow_control/Cow_control?wsdl" uri="wsdl/localhost_8080/Cow_control/Cow_control.wsdl"/>
+    <system systemId="http://localhost:8080/Cow_control/Cow_control?xsd=1" uri="wsdl/localhost_8080/Cow_control/Cow_control.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Wolf_control/Wolf_control?wsdl" uri="wsdl/localhost_8080/Wolf_control/Wolf_control.wsdl"/>
+    <system systemId="http://localhost:8080/Wolf_control/Wolf_control?xsd=1" uri="wsdl/localhost_8080/Wolf_control/Wolf_control.xsd_1.xsd"/>
+    <system systemId="http://localhost:58762/WebService1.asmx?wsdl" uri="wsdl/localhost_58762/WebService1.asmx.wsdl"/>
+    <system systemId="http://localhost:8080/Cow_control/Cow_control?xsd=2" uri="wsdl/localhost_8080/Cow_control/Cow_control.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/Movement_Service/Dog_control?wsdl" uri="wsdl/localhost_8080/Movement_Service/Dog_control.wsdl"/>
+    <system systemId="http://localhost:8080/Movement_Service/Dog_control?xsd=1" uri="wsdl/localhost_8080/Movement_Service/Dog_control.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Wolf_control/Wolf_control?xsd=2" uri="wsdl/localhost_8080/Wolf_control/Wolf_control.xsd_2.xsd"/>
+    <system systemId="http://localhost:58762/MovementWebService.asmx?WSDL" uri="wsdl/localhost_58762/MovementWebService.asmx.wsdl"/>
+</catalog>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CowMovement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CowMovementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CowMovementResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WolfMovement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WolfMovementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WolfMovementResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DogMovement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DogMovementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DogMovementResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CowMovementSoapIn">
+    <wsdl:part name="parameters" element="tns:CowMovement" />
+  </wsdl:message>
+  <wsdl:message name="CowMovementSoapOut">
+    <wsdl:part name="parameters" element="tns:CowMovementResponse" />
+  </wsdl:message>
+  <wsdl:message name="WolfMovementSoapIn">
+    <wsdl:part name="parameters" element="tns:WolfMovement" />
+  </wsdl:message>
+  <wsdl:message name="WolfMovementSoapOut">
+    <wsdl:part name="parameters" element="tns:WolfMovementResponse" />
+  </wsdl:message>
+  <wsdl:message name="DogMovementSoapIn">
+    <wsdl:part name="parameters" element="tns:DogMovement" />
+  </wsdl:message>
+  <wsdl:message name="DogMovementSoapOut">
+    <wsdl:part name="parameters" element="tns:DogMovementResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MovementWebServiceSoap">
+    <wsdl:operation name="CowMovement">
+      <wsdl:input message="tns:CowMovementSoapIn" />
+      <wsdl:output message="tns:CowMovementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WolfMovement">
+      <wsdl:input message="tns:WolfMovementSoapIn" />
+      <wsdl:output message="tns:WolfMovementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DogMovement">
+      <wsdl:input message="tns:DogMovementSoapIn" />
+      <wsdl:output message="tns:DogMovementSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MovementWebServiceSoap" type="tns:MovementWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CowMovement">
+      <soap:operation soapAction="http://tempuri.org/CowMovement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WolfMovement">
+      <soap:operation soapAction="http://tempuri.org/WolfMovement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DogMovement">
+      <soap:operation soapAction="http://tempuri.org/DogMovement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MovementWebServiceSoap12" type="tns:MovementWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CowMovement">
+      <soap12:operation soapAction="http://tempuri.org/CowMovement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WolfMovement">
+      <soap12:operation soapAction="http://tempuri.org/WolfMovement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DogMovement">
+      <soap12:operation soapAction="http://tempuri.org/DogMovement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MovementWebService">
+    <wsdl:port name="MovementWebServiceSoap" binding="tns:MovementWebServiceSoap">
+      <soap:address location="http://localhost:58762/MovementWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MovementWebServiceSoap12" binding="tns:MovementWebServiceSoap12">
+      <soap12:address location="http://localhost:58762/MovementWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
